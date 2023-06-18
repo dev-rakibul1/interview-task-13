@@ -1,0 +1,167 @@
+/* button style */
+
+/* Outline button  */
+.btn-wrap {
+  overflow: hidden;
+}
+.button-container {
+  max-width: 100%;
+  width: 75%;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.btn-shape-box {
+  padding: 21px;
+  border: 1px solid #ff7a00;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button-outline {
+  text-align: center;
+}
+
+.btn-top-right-triangle-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #ff7a00;
+  border-right: 30px solid transparent;
+}
+
+.btn-top-right-triangle-shape::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 1px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #1e1e1e;
+  border-right: 30px solid transparent;
+}
+
+.btn-bottom-left-triangle-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #ff7a00;
+  border-left: 30px solid transparent;
+}
+
+.btn-bottom-left-triangle-shape::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 30px solid #1e1e1e;
+  border-left: 30px solid transparent;
+}
+
+/* shape */
+.btn-top-hor-ver-shape {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.btn-top-hor-ver-shape span:first-child {
+  width: 2px;
+  height: 17px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-top-hor-ver-shape span:last-child {
+  width: 17px;
+  height: 2px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* shape */
+.btn-bottom-hor-ver-shape {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.btn-bottom-hor-ver-shape span:first-child {
+  width: 2px;
+  height: 17px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.btn-bottom-hor-ver-shape span:last-child {
+  width: 17px;
+  height: 2px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* btn-triangle-shape */
+.btn-triangle-shape {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 7px;
+  right: 7px;
+}
+
+.btn-triangle-shape span:first-child {
+  width: 17px;
+  height: 2px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn-triangle-shape span:nth-child(2) {
+  width: 2px;
+  height: 22px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  top: -3px;
+  transform: rotate(-45deg);
+}
+.btn-triangle-shape span:last-child {
+  width: 2px;
+  height: 17px;
+  background: #ff7a00;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn-bg-shape {
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  right: 3px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #1e1e1e;
+  border-left: 20px solid transparent;
+}

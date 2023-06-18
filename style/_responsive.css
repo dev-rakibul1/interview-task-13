@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Base styles: opinionated defaults and responsive in others device
+========================================================================== */
+.btn-plus-small-shape {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Mini Mobile :480px. */
+
+@media (max-width: 776px) {
+  .btn-plus-small-shape {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .user-starts {
+    display: inline-block;
+  }
+
+  .like-reply-area {
+    display: block !important;
+  }
+  .reply {
+    margin-top: 15px;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+}
